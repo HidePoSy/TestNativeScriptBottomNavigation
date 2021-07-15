@@ -1,0 +1,32 @@
+<BottomNavigation selectedIndex="1">
+
+  <!-- The bottom tab UI is created via TabStrip (the containier) and TabStripItem (for each tab)-->
+  <TabStrip>
+      <TabStripItem>
+          <Label text="Home"></Label>
+          <!-- <Image src="font://&#xf015;" class="fas"></Image> -->
+      </TabStripItem>
+
+      <TabStripItem class="special">
+          <Label text="Account"></Label>
+          <!-- <Image src="font://&#xf007;" class="fas"></Image> -->
+      </TabStripItem>
+
+      <TabStripItem class="special">
+          <Label text="Search"></Label>
+          <!-- <Image src="font://&#xf00e;" class="fas"></Image> -->
+      </TabStripItem>
+  </TabStrip>
+
+  <!-- The number of TabContentItem components should corespond to the number of TabStripItem components -->
+  <TabContentItem>
+      <page-router-outlet name="featured"></page-router-outlet>
+  </TabContentItem>
+  <TabContentItem>
+      <page-router-outlet name="browse"></page-router-outlet>
+  </TabContentItem>
+  <TabContentItem>
+      <page-router-outlet  name="search"></page-router-outlet>
+  </TabContentItem>
+
+</BottomNavigation>
